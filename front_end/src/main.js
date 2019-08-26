@@ -3,9 +3,10 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router/index'
-import ElementUI from 'element-ui'
 import settings from '../settings'
 import 'element-ui/lib/theme-chalk/index.css'
+import ElementUI from 'element-ui'
+
 // 自定义全局配置
 Vue.prototype.$settings = settings
 
