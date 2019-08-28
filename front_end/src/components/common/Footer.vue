@@ -1,0 +1,3 @@
+<template>
+  <carousel></carousel>
+</template>
