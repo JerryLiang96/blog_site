@@ -51,19 +51,19 @@ export default new Router({
           }
         },
         {
-          path: '/movie',
-          name: 'Movie',
-          component: Movie,
-          meta: {
-            title: '影视'
-          }
-        },
-        {
           path: '/music',
           name: 'Music',
           component: Music,
           meta: {
             title: '音乐'
+          }
+        },
+        {
+          path: '/movie',
+          name: 'Movie',
+          component: Movie,
+          meta: {
+            title: '影视'
           }
         },
         {
