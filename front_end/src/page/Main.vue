@@ -1,12 +1,12 @@
 <template>
-  <div>
+  <div class="j-body d-flex flex-column">
     <header>
       <navmenu></navmenu>
     </header>
     <main>
       <router-view></router-view>
     </main>
-    <footer>
+    <footer class="mt-auto py-3">
       <myfooter></myfooter>
     </footer>
   </div>
@@ -28,5 +28,8 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
+.j-body {
+  height: 100%;
+}
 </style>

@@ -12,7 +12,13 @@ export default {
 </script>
 
 <style>
+html,
+body {
+  height: 100%;
+}
+
 #app {
+  height: 100%;
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -20,6 +26,7 @@ export default {
   color: #2c3e50;
   background-image: url('../static/image/background.jpg');
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
+  background-attachment: fixed;
 }
 </style>

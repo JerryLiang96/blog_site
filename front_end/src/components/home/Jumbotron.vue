@@ -6,9 +6,6 @@
       <template slot="lead">
         对，没错，明学语录
       </template>
-
-      <hr class="my-4">
-
       <p>
         您觉得可以吗
       </p>

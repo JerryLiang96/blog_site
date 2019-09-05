@@ -38,10 +38,15 @@
     <!-- Footer Elements -->
 
     <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">© 2018 Copyright:
-      <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
+    <div class="j-footer footer-copyright text-center py-3">© 2019 Copyright:
     </div>
     <!-- Copyright -->
 
   </footer>
 </template>
+
+<style>
+.j-footer {
+  color: rgb(120, 120, 120);
+}
+</style>
