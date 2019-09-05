@@ -1,22 +1,26 @@
 <template>
-  <el-container>
-    <el-header>
+  <div>
+    <header>
       <navmenu></navmenu>
-    </el-header>
-    <el-main>
+    </header>
+    <main>
       <router-view></router-view>
-    </el-main>
-    <el-footer>Footer</el-footer>
-  </el-container>
+    </main>
+    <footer>
+      <myfooter></myfooter>
+    </footer>
+  </div>
 </template>
 
 <script>
 import NavMenu from '@/components/common/NavMenu'
+import MyFooter from '@/components/common/MyFooter'
 
 export default {
   name: 'Main',
   components: {
-    'navmenu': NavMenu
+    'navmenu': NavMenu,
+    'myfooter': MyFooter
   },
   data () {
     return {}

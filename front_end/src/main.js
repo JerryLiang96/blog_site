@@ -4,15 +4,16 @@ import Vue from 'vue'
 import App from './App'
 import router from './router/index'
 import settings from '../settings'
-import 'element-ui/lib/theme-chalk/index.css'
-import ElementUI from 'element-ui'
+import BootstrapVue from 'bootstrap-vue'
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 // 自定义全局配置
 Vue.prototype.$settings = settings
 
 // 调用插件
-Vue.use(ElementUI)
-
+Vue.use(BootstrapVue)
+Vue.use(require('vue-wechat-title'))
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

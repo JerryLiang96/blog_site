@@ -1,19 +1,22 @@
 <template>
-  <carousel></carousel>
+  <div>
+    <jumbotron></jumbotron>
+  </div>
 </template>
 
 <script>
-import Carousel from '@/components/home/Carousel'
+import Jumbotron from '@/components/home/Jumbotron'
 import NavMenu from '@/components/common/NavMenu'
 
 export default {
   name: 'Home',
   components: {
     'navmenu': NavMenu,
-    'carousel': Carousel
+    'jumbotron': Jumbotron
   },
   data () {
-    return {}
+    return {
+    }
   }
 }
 </script>

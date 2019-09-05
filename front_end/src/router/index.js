@@ -3,7 +3,6 @@ import Router from 'vue-router'
 import Main from '@/page/Main'
 import Home from '@/page/Home'
 import Book from '@/page/Book'
-import Computer from '@/page/Computer'
 import Photography from '@/page/Photography'
 import Movie from '@/page/Movie'
 import Music from '@/page/Music'
@@ -32,14 +31,6 @@ export default new Router({
           component: Book,
           meta: {
             title: '书籍'
-          }
-        },
-        {
-          path: '/computer',
-          name: 'Computer',
-          component: Computer,
-          meta: {
-            title: '计算机'
           }
         },
         {
