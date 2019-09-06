@@ -3,7 +3,7 @@
     <header>
       <navmenu></navmenu>
     </header>
-    <main>
+    <main class="j-main">
       <router-view></router-view>
     </main>
     <footer class="mt-auto py-3">
@@ -23,12 +23,17 @@ export default {
     'myfooter': MyFooter
   },
   data () {
-    return {}
+    return {
+    }
   }
 }
 </script>
 
 <style>
+.j-main {
+  flex-shrink: 0 !important;
+}
+
 .j-body {
   height: 100%;
 }

@@ -1,14 +1,8 @@
 <template>
-  <div>
-    <b-jumbotron class="j-bg" text-variant="white">
-      <template slot="header">真的有牌面儿</template>
-
-      <template slot="lead">
-        对，没错，明学语录
-      </template>
-      <p>
-        您觉得可以吗
-      </p>
+  <div class="container">
+    <b-jumbotron class="j-jum" text-variant="white">
+      <p class="display-4">Welcome!</p>
+      <h3>Share my life. Make more friends.</h3>
     </b-jumbotron>
   </div>
 </template>
@@ -23,7 +17,16 @@ export default {
 </script>
 
 <style>
-.j-bg {
-  background: rgba(0, 0, 0, 0);
+h3 {
+  color: rgb(163, 163, 163);
+  font-family: 'Microsoft YaHei Light';
+  font-style: italic;
+}
+.j-jum {
+  text-align: left;
+  background: rgba(77, 77, 77, 0);
+  margin-top: 5em;
+  padding-top: 1em;
+  padding-bottom: 5em;
 }
 </style>

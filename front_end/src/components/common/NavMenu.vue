@@ -29,6 +29,10 @@ export default {
 </script>
 
 <style>
+.j-brand {
+  font-style: italic;
+}
+
 .j-bar:after {
   content: '';
   position: absolute;

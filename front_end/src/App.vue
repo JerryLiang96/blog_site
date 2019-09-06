@@ -12,9 +12,16 @@ export default {
 </script>
 
 <style>
-html,
+html {
+  height: 100%;
+  background-image: url('../static/image/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
 body {
   height: 100%;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 #app {
@@ -24,9 +31,5 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  background-image: url('../static/image/background.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
 }
 </style>
