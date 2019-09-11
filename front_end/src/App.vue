@@ -5,7 +5,6 @@
 </template>
 
 <script>
-
 export default {
   name: 'App'
 }
@@ -13,12 +12,13 @@ export default {
 
 <style>
 html {
-  height: 100%;
   background-image: url('../static/image/background.jpg');
+  height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
+
 body {
   height: 100%;
   background-color: rgba(0, 0, 0, 0);

@@ -2,7 +2,7 @@
   <div class="container">
     <b-jumbotron class="j-jum" text-variant="white">
       <p class="display-4">Welcome!</p>
-      <h3>Share my life. Make more friends.</h3>
+      <h3>Share my life. </h3>
     </b-jumbotron>
   </div>
 </template>

@@ -14,7 +14,7 @@ import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
+print('BASE_DIR:', BASE_DIR)
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
@@ -43,6 +43,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -55,7 +56,7 @@ ROOT_URLCONF = 'jerry_blog.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')],
+        'DIRS': ['front_end/dist'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -67,6 +68,11 @@ TEMPLATES = [
         },
     },
 ]
+STATICFILES_DIRS = [
+    os.path.join(os.path.dirname(BASE_DIR), "front_end/dist/static"),
+]
+
+STATIC_URL = '/static/'
 
 WSGI_APPLICATION = 'jerry_blog.wsgi.application'
 
@@ -127,4 +133,4 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
-STATIC_URL = '/static/'
+CORS_ORIGIN_ALLOW_ALL = True

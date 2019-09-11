@@ -7,12 +7,12 @@
             "label": "migrate",
             "type": "shell",
             "command": "python manage.py migrate"
-        }
+        },
         {
             "label": "makemigrations",
             "type": "shell",
             "command": "python manage.py makemigrations"
-        }
+        },
         {
             "label": "help",
             "type": "shell",
