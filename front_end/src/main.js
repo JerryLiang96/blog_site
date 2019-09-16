@@ -7,11 +7,14 @@ import Vue from 'vue'
 import App from './App'
 import settings from '../settings'
 import router from './router/index'
+import axios from 'axios'
+import VueAxios from 'vue-axios'
 
 // 自定义全局配置
 Vue.prototype.$settings = settings
 
 // 调用插件
+Vue.use(VueAxios, axios)
 Vue.use(BootstrapVue)
 Vue.use(require('vue-wechat-title'))
 Vue.config.productionTip = false

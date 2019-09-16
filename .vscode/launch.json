@@ -10,10 +10,14 @@
             "request": "launch",
             "program": "${workspaceFolder}\\back_end\\manage.py",
             "args": [
-                "runserver",
-                "--noreload"
-            ],
-            "django": true
+                "runserver"
+            ]
+        },
+        {
+            "name": "当前文件",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}"
         }
     ]
 }

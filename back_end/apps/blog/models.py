@@ -2,19 +2,26 @@ from django.db import models
 from django.contrib.auth.models import User
 
 # blog的分类表
+
+
 class Category(models.Model):
     name = models.CharField(max_length=100)
+
     def __str__(self):
         return self.name
 
 # blog的标签表
+
+
 class Tag(models.Model):
     name = models.CharField(max_length=100)
 
     def __str__(self):
         return self.name
 
-#blog表
+# blog表
+
+
 class Blog(models.Model):
 
     # blog标题
@@ -35,4 +42,3 @@ class Blog(models.Model):
 
     def __str__(self):
         return('{}:{}'.format(self.category, self.title))
-    
