@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Main from '@/page/Main'
+import BaseLayout from '@/page/BaseLayout'
 import Home from '@/page/Home'
 import Book from '@/page/Book'
 import Photography from '@/page/Photography'
@@ -15,7 +15,7 @@ export default new Router({
   routes: [
     {
       path: '/',
-      component: Main,
+      component: BaseLayout,
       children: [
         {
           path: '/',

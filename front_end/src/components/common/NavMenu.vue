@@ -20,17 +20,8 @@
 export default {
   data () {
     return {
-      items: this.$router.options.routes[0].children.slice(1),
-      info: null
+      items: this.$router.options.routes[0].children.slice(1)
     }
-  },
-  mounted () {
-    this.axios
-      .get('/api/nav')
-      .then(response => (this.info = response))
-      .catch(function (error) { // 请求失败处理
-        console.log(error)
-      })
   }
 }
 </script>

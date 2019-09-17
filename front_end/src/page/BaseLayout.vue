@@ -17,7 +17,7 @@ import NavMenu from '@/components/common/NavMenu'
 import MyFooter from '@/components/common/MyFooter'
 
 export default {
-  name: 'Main',
+  name: 'BaseLayout',
   components: {
     'navmenu': NavMenu,
     'myfooter': MyFooter

@@ -16,11 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
-from apps.common.views import NavView
-
+from apps.blog.views import BookView
 
 router = DefaultRouter()
-router.register(r'nav', NavView, base_name='nav')
+router.register(r'book', BookView, base_name='book')
 
 urlpatterns = [
     path('admin/', admin.site.urls),

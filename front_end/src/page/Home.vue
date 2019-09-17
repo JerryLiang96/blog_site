@@ -6,12 +6,10 @@
 
 <script>
 import Jumbotron from '@/components/home/Jumbotron'
-import NavMenu from '@/components/common/NavMenu'
 
 export default {
   name: 'Home',
   components: {
-    'navmenu': NavMenu,
     'jumbotron': Jumbotron
   },
   data () {

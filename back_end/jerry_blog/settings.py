@@ -39,7 +39,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'apps.blog',
-    'apps.common',
 ]
 
 MIDDLEWARE = [
