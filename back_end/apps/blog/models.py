@@ -20,6 +20,19 @@ class Tag(models.Model):
     def __str__(self):
         return self.name
 
+# blog的图片表
+
+
+class Image(models.Model):
+    name = models.CharField(max_length=100)
+    img = models.ImageField(
+        upload_to='back_end/static/image/full_size', blank=True)
+    path = models.FilePathField(path='back_end/static/image/thumb')
+    describe = models.CharField(max_length=100)
+
+    def __str__(self):
+        return self.name
+
 # blog表
 
 
@@ -38,6 +51,8 @@ class Blog(models.Model):
     category = models.ForeignKey(Category, on_delete=models.DO_NOTHING)
     # 标签 tag与blog多对多关联
     tag = models.ManyToManyField(Tag, blank=True)
+    # 图片 image与blog多对多关联
+    image = models.ManyToManyField(Image, blank=True)
     # 作者 author与blog一对多关联
     author = models.ForeignKey(User, on_delete=models.DO_NOTHING)
 

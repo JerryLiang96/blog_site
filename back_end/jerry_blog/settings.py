@@ -134,9 +134,9 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
-CORS_ORIGIN_ALLOW_ALL = False
+# CORS_ORIGIN_ALLOW_ALL = False
 
-CORS_ORIGIN_WHITELIST = (  # 配置允许访问的白名单
-    'localhost:8080',
-    '127.0.0.1:8080',
-)
+# CORS_ORIGIN_WHITELIST = (  # 配置允许访问的白名单
+#     'localhost:8080',
+#     '127.0.0.1:8080',
+# )
