@@ -70,13 +70,16 @@ TEMPLATES = [
     },
 ]
 STATICFILES_DIRS = [
-    os.path.join(os.path.dirname(BASE_DIR), "front_end/dist/static"),
+    os.path.join(os.path.dirname(BASE_DIR), 'front_end/dist/static'),
 ]
 
 STATIC_URL = '/static/'
 
-WSGI_APPLICATION = 'jerry_blog.wsgi.application'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
+MEDIA_URL = '/media/'
+
+WSGI_APPLICATION = 'jerry_blog.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases

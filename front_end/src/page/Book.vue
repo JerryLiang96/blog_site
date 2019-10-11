@@ -1,16 +1,18 @@
 <template>
   <div class="container pt-5">
     <div class="card-columns mt-5">
-      <card v-for="book in books" :key="book.id" :title="book.title" :body="book.body"></card>
+      <card v-for="book in books" :key="book.id" :title="book.title" :body="book.body" :tag="book.tag" :m-time="
+        book.modified_time" :image="book.image">
+      </card>
     </div>
   </div>
 </template>
 
 <script>
-import Card from '@/components/common/Card'
+import Card from '@/components/book/Card'
 
 export default {
-  name: 'Book', 
+  name: 'Book',
   components: {
     'card': Card
   },

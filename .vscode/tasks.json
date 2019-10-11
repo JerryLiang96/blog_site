@@ -6,17 +6,17 @@
         {
             "label": "migrate",
             "type": "shell",
-            "command": "python manage.py migrate"
+            "command": "F:/python_project/env/blog_env/Scripts/python.exe manage.py migrate"
         },
         {
             "label": "makemigrations",
             "type": "shell",
-            "command": "python manage.py makemigrations"
+            "command": "F:/python_project/env/blog_env/Scripts/python.exe manage.py makemigrations"
         },
         {
             "label": "help",
             "type": "shell",
-            "command": "python manage.py help"
+            "command": "F:/python_project/env/blog_env/Scripts/python.exe manage.py help"
         }
     ]
 }
