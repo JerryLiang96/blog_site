@@ -21,12 +21,11 @@ html {
 
 body {
   height: 100%;
-  background-color: rgba(0, 0, 0, 0);
 }
 
 #app {
   height: 100%;
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: 'Microsoft YaHei';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

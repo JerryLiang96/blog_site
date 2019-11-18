@@ -5,19 +5,20 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Python: 当前文件",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
             "name": "Python: Django",
             "type": "python",
             "request": "launch",
-            "program": "${workspaceFolder}\\back_end\\manage.py",
+            "program": "${workspaceFolder}/back_end/manage.py",
             "args": [
                 "runserver"
             ]
-        },
-        {
-            "name": "当前文件",
-            "type": "python",
-            "request": "launch",
-            "program": "${file}"
         }
     ]
 }

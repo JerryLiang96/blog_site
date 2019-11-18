@@ -6,17 +6,17 @@
         {
             "label": "migrate",
             "type": "shell",
-            "command": "F:/python_project/env/blog_env/Scripts/python.exe manage.py migrate"
+            "command": "python.exe ${workspaceFolder}/back_end/manage.py migrate"
         },
         {
             "label": "makemigrations",
             "type": "shell",
-            "command": "F:/python_project/env/blog_env/Scripts/python.exe manage.py makemigrations"
+            "command": "python.exe ${workspaceFolder}/back_end/manage.py makemigrations"
         },
         {
             "label": "help",
             "type": "shell",
-            "command": "F:/python_project/env/blog_env/Scripts/python.exe manage.py help"
+            "command": "python.exe ${workspaceFolder}/back_end/manage.py help"
         }
     ]
 }

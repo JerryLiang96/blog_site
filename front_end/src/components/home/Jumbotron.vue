@@ -1,8 +1,7 @@
 <template>
   <div class="container">
     <b-jumbotron class="j-jum" text-variant="white">
-      <p class="display-4">Welcome!</p>
-      <h3>偶影独游，欣慨交心</h3>
+      <p class="home-p">Fuck it</p>
     </b-jumbotron>
   </div>
 </template>
@@ -17,10 +16,14 @@ export default {
 </script>
 
 <style>
-h3 {
-  color: rgb(163, 163, 163);
-  font-family: 'Microsoft YaHei Light';
-  font-style: italic;
+.home-p {
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-top: 1.5em;
+  color: rgb(212, 212, 212);
+  font-family: cursive;
+  font-style: normal;
+  font-size: 5em;
 }
 .j-jum {
   text-align: left;

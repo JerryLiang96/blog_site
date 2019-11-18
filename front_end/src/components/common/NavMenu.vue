@@ -1,6 +1,6 @@
 <template>
   <div>
-    <b-navbar toggleable="lg" type="dark" class="j-bar fixed-top shadow-sm">
+    <b-navbar toggleable="lg" class="shadow j-bar fixed-top shadow-sm">
       <div class="container">
         <b-navbar-brand class="j-brand" to="/">Jerry</b-navbar-brand>
         <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
@@ -28,7 +28,7 @@ export default {
 
 <style>
 .j-brand {
-  font-style: italic;
+  font-family: cursive;
 }
 
 .j-bar:after {
@@ -38,8 +38,8 @@ export default {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(218, 218, 218, 0.3);
   z-index: -1;
-  filter: blur(5px);
+  filter: blur(20px);
 }
 </style>
